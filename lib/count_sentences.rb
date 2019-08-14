@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     split_everything = self.split(/\W+/)
-   # split_everything = split_everything.reject { |c| c.empty? }
+    split_everything = split_everything.reject { |c| c.empty? }
     split_everything.count
   end
 end
