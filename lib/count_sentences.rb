@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    split_everything = self.split(\w+(')\w+)
+    split_everything = self.split(\w+(')\w+/)
     split_everything.delete_if{|e| e.length == 0}
     split_everything.count
   end
